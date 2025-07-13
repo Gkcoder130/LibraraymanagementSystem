@@ -1,3 +1,5 @@
+NOTE -----#This project is created by the students Gaurav Kale And Rohan Bandal from sveri college.
+
 # 📚 Menu-Driven Java Console Library Management System Project using Maven, JPA, and Hibernate
 
 A simple and user-friendly Library Management System to help manage books, members, and transactions efficiently.
