@@ -8,12 +8,12 @@ This project demonstrates how to build a menu-driven Java console application fo
 LibrarymanagementSystem/
 ├── .classpath
 ├── .project
-├── .settings/                # IDE settings
-├── README.md                 # Project documentation
+├── .settings/                   # IDE settings
+├── README.md                    # Project documentation
 ├── Screenshot2025-07-13234041.png  # Output screenshot
 ├── desktop.ini
-├── pom.xml                   # Maven project configuration
-├── screenshots/              # (Empty or for additional screenshots)
+├── pom.xml                      # Maven project configuration
+├── screenshots/                 # (Empty or for additional screenshots)
 ├── src/
 │   ├── main/
 │   │   ├── java/
@@ -30,7 +30,8 @@ LibrarymanagementSystem/
 │           └── com/
 │               └── LibrarymanagementSystem/
 │                   └── AppTest.java     # Unit tests for the application
-└── target/                    # Compiled classes and build output (auto-generated)
+└── target/                      # Compiled classes and build output (auto-generated)
+
 
 ### Key Steps:
 1. **Set up a Maven Project:**
