@@ -42,8 +42,8 @@ This approach ensures a clean, maintainable, and extensible architecture for you
 4. Run the application (`LibrarymanagementSystemApplication.java`).
 5. Open your browser and go to `http://localhost:8080`.
 
-## 🖼️ Screenshot
-Below is a sample screenshot of the application interface:
+## 🖼️ Output
+Below is a sample output screenshot of the application interface:
 
 ![Application Screenshot](Screenshot2025-07-13234041.png)
 
