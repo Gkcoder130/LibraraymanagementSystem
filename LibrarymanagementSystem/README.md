@@ -4,11 +4,10 @@ A simple and user-friendly Library Management System to help manage books, membe
 
 This project demonstrates how to build a menu-driven Java console application for library management using Maven for build automation, JPA (Java Persistence API) for ORM, and Hibernate as the JPA implementation. The application allows users to perform CRUD operations (Create, Read, Update, Delete) on books and members, and to manage book issues and returns, all through a simple console menu.
 
-# 📂 Project Structure
+# Project Structure
 
-
-
-'''LibrarymanagementSystem/
+```plaintext
+LibrarymanagementSystem/
 ├── .classpath
 ├── .project
 ├── .settings/
@@ -33,7 +32,8 @@ This project demonstrates how to build a menu-driven Java console application fo
 │           └── com/
 │               └── LibrarymanagementSystem/
 │                   └── AppTest.java
-└── target/'''
+└── target/
+```
 
 ### Key Steps:
 1. **Set up a Maven Project:**
