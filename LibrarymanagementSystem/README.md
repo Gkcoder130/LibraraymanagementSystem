@@ -8,8 +8,7 @@ This project demonstrates how to build a menu-driven Java console application fo
 
 
 
-'''
-LibrarymanagementSystem/
+'''LibrarymanagementSystem/
 ├── .classpath
 ├── .project
 ├── .settings/
