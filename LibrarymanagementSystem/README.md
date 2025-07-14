@@ -67,7 +67,7 @@ This approach ensures a clean, maintainable, and extensible architecture for you
 🔗 Hibernate ORM 7.0.5.Final
 📦 Jakarta Persistence API 3.2.0
 🐘 PostgreSQL 17+
-🧰 Spring Boot workspace
+🧰 Spring workspace
 
 
 ## 🚀 How to Run the Project
