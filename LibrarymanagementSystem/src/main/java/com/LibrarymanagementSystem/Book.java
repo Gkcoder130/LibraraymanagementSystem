@@ -1,37 +1,56 @@
 package com.LibrarymanagementSystem;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityTransaction;
+import java.util.List;
 
-@Entity
-public class Book {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    
-    private String title;
-    private String author;
-    private int year;
+public class BookDao {
 
-    public Book() {}
-
-    public Book(String title, String author, int year) {
-        this.title = title;
-        this.author = author;
-        this.year = year;
+    public void addBook(Book b) {
+        EntityManager em = LibraryUtil.getEntityManager();
+        EntityTransaction tx = em.getTransaction();
+        try {
+            tx.begin();
+            em.persist(b);
+            tx.commit();
+        } finally {
+            em.close();
+        }
     }
 
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    public List<Book> getAllBooks() {
+        EntityManager em = LibraryUtil.getEntityManager();
+        try {
+            return em.createQuery("Select b from Book b", Book.class).getResultList();
+        } finally {
+            em.close();
+        }
+    }
 
-    public String getTitle() { return title; }
-    public void setTitle(String title) { this.title = title; }
+    public void updateBook(Book b) {
+        EntityManager em = LibraryUtil.getEntityManager();
+        EntityTransaction tx = em.getTransaction();
+        try {
+            tx.begin();
+            em.merge(b);
+            tx.commit();
+        } finally {
+            em.close();
+        }
+    }
 
-    public String getAuthor() { return author; }
-    public void setAuthor(String author) { this.author = author; }
-
-    public int getYear() { return year; }
-    public void setYear(int year) { this.year = year; }
+    public void deleteBook(Long id) {
+        EntityManager em = LibraryUtil.getEntityManager();
+        EntityTransaction tx = em.getTransaction();
+        try {
+            tx.begin();
+            Book b = em.find(Book.class, id);
+            if (b != null) {
+                em.remove(b);
+            }
+            tx.commit();
+        } finally {
+            em.close();
+        }
+    }
 }
