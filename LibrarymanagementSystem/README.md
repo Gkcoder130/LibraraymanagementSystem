@@ -63,9 +63,11 @@ This approach ensures a clean, maintainable, and extensible architecture for you
 - 🖥️ Simple and intuitive interface
 
 ## 🛠️ Technologies Used
-- JPA (Spring Framework)
-- Spring Boot
-- PostgreSQL (production or main database)
+☕ Java 17+
+🔗 Hibernate ORM 7.0.5.Final
+📦 Jakarta Persistence API 3.2.0
+🐘 PostgreSQL 17+
+🧰 Spring Boot workspace
 
 
 ## 🚀 How to Run the Project
